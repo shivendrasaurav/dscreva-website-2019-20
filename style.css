@@ -4,23 +4,19 @@
     color: #888;
 }
 #two{
-    width: 100%;
-    height: 100%;
     background: #cde757;
 }
 #three{
-    width: 100%;
-    height: 100%;
-    background: #985bdf;
+    background: url('team.jpg');
+    background-size: cover;
 }
 #four{
-    width: 100%;
-    height: 100%;
     background: #f03636;
 }
 .jumbotron{
     font-family: 'Product Sans', sans-serif;
     font-size: 84px;
+    background: transparent;
 }
 *{
     box-sizing: border-box;
@@ -56,7 +52,7 @@ body{ background: #fdfde8; }
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
     .heading{position: absolute; top: 8px; left: 0px; background: transparent; font-size: 64px;}
-    .fullscreen{width: 96%; margin: -2%; height: 100%;}
+    .fullscreen{width: 104%; margin: -2%; height: 100%;}
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
@@ -226,7 +222,7 @@ button.secondary:focus{
     font-size: 24px;
 }
 .tab:hover{
-    border: 2px dashed #ffe100;
+    border: 2px dashed #000;
 }
 .tab.active{
     background: #ffe100;
@@ -248,7 +244,7 @@ button.primary.tab:focus{
         height: 60px;
         padding-top: 5px;
     }
-    .tab.menu{color: #FFF;}
+    .tab.menu{color: #000; border-radius: 5px;}
     .sidenav{display: none;}
 }
 @media (max-width: 700px) {
