@@ -1,6 +1,4 @@
 #one{
-    width: 100%;
-    height: 100%;
     background: url('home.jpg');
     background-size: cover;
     color: #888;
@@ -38,10 +36,8 @@ body{ background: #fdfde8; }
 .success{ background: #008000; color: #FFF; }
 .fullscreen{
     width: 101%;
-    height: 101%;
-    top: 0;
-    right: 0;
-    margin: 0.5%;
+    height: 102.5%;
+    margin: -0.5%;
 }
 
 .right{float: right;}
@@ -59,7 +55,8 @@ body{ background: #fdfde8; }
 
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
-    .heading{position: absolute; top: 8px; left: 16px; background: transparent; font-size: 16px;}
+    .heading{position: absolute; top: 8px; left: 0px; background: transparent; font-size: 64px;}
+    .fullscreen{width: 96%; margin: -2%; height: 100%;}
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
