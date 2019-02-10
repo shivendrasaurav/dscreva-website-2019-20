@@ -1,14 +1,14 @@
 #one{
     background: url('home.jpg');
     background-size: cover;
-    color: #888;
+    color: #555;
 }
 #two{
     background: #cde757;
 }
 #three{
     background: url('team.jpg');
-    background-size: cover;
+    background-size: 125% 175%;
 }
 #four{
     background: #f03636;
