@@ -2,16 +2,18 @@
     background: url('home.jpg');
     background-size: cover;
     color: #555;
+    background-attachment: fixed;
 }
 #two{
     background: #cde757;
 }
 #three{
     background: url('team.jpg');
-    background-size: 125% 175%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 #four{
-    background: #f03636;
+    background: #444;
 }
 .jumbotron{
     font-family: 'Product Sans', sans-serif;
@@ -52,7 +54,9 @@ body{ background: #fdfde8; }
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
     .heading{position: absolute; top: 8px; left: 0px; background: transparent; font-size: 64px;}
-    .fullscreen{width: 104%; margin: -2%; height: 100%;}
+    .fullscreen{width: 104%; margin: -2%; min-height: 100%;}
+    #two{height: 150%;}
+    #three{height: 120%; margin-top: 20%;}
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
@@ -87,6 +91,11 @@ body{
 
 label{
     font-weight: 600;
+}
+
+.polaroid{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 input[type=text],input[type=number],input[type=password]{
