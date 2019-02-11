@@ -1,11 +1,11 @@
 #one{
-    background: url('home.jpg');
+    background:  url('home.jpg');
     background-size: cover;
     color: #555;
     background-attachment: fixed;
 }
 #two{
-    background: #cde757;
+    background: #3cba54;
 }
 #three{
     background: url('team.jpg');
@@ -13,10 +13,12 @@
     background-attachment: fixed;
 }
 #four{
-    background: #DDD;
+    background: #f4c20d;
 }
 #five{
-    background: #193c50;
+    background: url('cus.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 .jumbotron{
     font-family: 'Product Sans', sans-serif;
