@@ -5,7 +5,7 @@
     background-attachment: fixed;
 }
 #two{
-    background: #3cba54;
+    background: linear-gradient(to bottom right , #FFBA8C 10%, #D8E3A3 100%); /*59B3B3*/
 }
 #three{
     background: url('team.jpg');
