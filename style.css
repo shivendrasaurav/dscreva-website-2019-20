@@ -13,7 +13,8 @@
     background-attachment: fixed;
 }
 #four{
-    background: #f4c20d;
+    /*background:linear-gradient(to bottom right , #F2D16D 0%, #D9FA41 50%, #C02641 80.5%);*/
+    background:linear-gradient(to bottom right , #63E7D5 0%, #344964 105%);
 }
 #five{
     background: url('cus.jpg');
