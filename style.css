@@ -62,8 +62,9 @@ body{ background: #fdfde8; }
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
     .heading{position: absolute; top: 8px; left: 0px; background: transparent; font-size: 64px;}
-    .fullscreen{width: 104%; margin: -2%; min-height: 100%;}
+    .fullscreen{width: 104%; margin: -2%; min-height: 102%;}
     #two{height: 150%;}
+    #four{height: 150%;}
     #three{height: 120%; margin-top: 20%;}
     .mview{display: block;}
     .dview{display: none;}
@@ -301,7 +302,9 @@ button.primary.tab:focus{
 
 iframe{
     width: 100%;
-    height: 40%;
+    height: 240px;
     border: none;
     border-radius: 6px;
 }
+a{text-decoration: none; color: #000;}
+a:visited{color: #000;}
