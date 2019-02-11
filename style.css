@@ -13,7 +13,10 @@
     background-attachment: fixed;
 }
 #four{
-    background: #444;
+    background: #DDD;
+}
+#five{
+    background: #193c50;
 }
 .jumbotron{
     font-family: 'Product Sans', sans-serif;
@@ -44,19 +47,24 @@ body{ background: #fdfde8; }
     margin-left: auto;
     margin-right: auto;
     width: 96%;
-    overflow-y: hidden;
+    display: block;
 }
 
 .col{display: inline-block;}
 
 .heading{position: absolute; bottom: 8px; left: 16px; background: transparent;}
 
+.dview{display: block;}
+.mview{display: none;}
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
     .heading{position: absolute; top: 8px; left: 0px; background: transparent; font-size: 64px;}
     .fullscreen{width: 104%; margin: -2%; min-height: 100%;}
     #two{height: 150%;}
     #three{height: 120%; margin-top: 20%;}
+    .mview{display: block;}
+    .dview{display: none;}
+
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
@@ -286,4 +294,11 @@ button.primary.tab:focus{
         padding: 5px;
         padding-left: 45px;
     }
+}
+
+iframe{
+    width: 100%;
+    height: 40%;
+    border: none;
+    border-radius: 6px;
 }
