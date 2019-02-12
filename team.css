@@ -25,9 +25,10 @@ h2 {
 }
 
 .background-only {
-    background: linear-gradient(to bottom right , #0f6b99 0%, #59B3B3 150%);
+    background: linear-gradient(to top left , rgb(99, 219, 243) 0%, rgb(25, 144, 180) 80%);
 }
 
-/*selected 1 - background: linear-gradient(to bottom right , #0f6b99 0%, #59B3B3 150%);*/
+/*selected 1 - background: linear-gradient(to bottom right , #0f6b99 0%, #59B3B3 150%);
+background: linear-gradient(to bottom right , #0f6b99 0%, #59B3B3 150%);*/
 
 /* to add polaroid class to image use this keyword -  polaroid*/
