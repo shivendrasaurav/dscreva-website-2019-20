@@ -70,6 +70,7 @@ body{ background: #fdfde8; }
     .mview{display: block;}
     .dview{display: none;}
     .center{text-align: center;}
+
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
@@ -88,6 +89,7 @@ body{ background: #fdfde8; }
     .large2{width: 16.66667%; }
     .large3{width: 24%; }
     .large4{width: 30%; }
+    .large45{width: 33%; }
     .large5{width: 41.66667%; }
     .large6{width: 48%; }
     .large7{width: 58.33333%; }
@@ -310,8 +312,8 @@ a{text-decoration: none; color: #000;}
 a:visited{color: #000;}
 
 .person{
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     margin: auto;
     display: block;
 }
@@ -322,3 +324,4 @@ a:visited{color: #000;}
     text-align: center;
     font-family: 'Product Sans';
 }
+.person_name.btmspc{padding-bottom:10%;}
