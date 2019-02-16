@@ -29,7 +29,7 @@
 *{
     box-sizing: border-box;
     transition: 300ms;
-    background: inherit;
+    background: transparent;
 }
 
 body{ background: #fdfde8; }
