@@ -262,7 +262,7 @@ button.primary.tab:focus{
         z-index: 9;
         margin-left: -1%;
         width: 100.38%;
-        background: linear-gradient(to bottom right, #2193b0, #6dd5ed);
+        background: linear-gradient(to bottom left, #32a4c1, #6dd5ed);
         opacity:0.8;
         height: 60px;
         padding-top: 5px;
