@@ -1,20 +1,16 @@
-.section-team img{
+img{
     height: 280px;
     width: 280px;
-    margin-left: 10px;
+    display: block;
+    margin-left: auto;
     padding: 5px;
 }
 
-.section-team figcaption {
+figcaption {
     text-align: center;
     margin-top: 7px;
     font-weight: 400px;
     font-size: 25px;
-}
-
-.row {
-    max-width: 1280px;
-    margin: 0 auto 0 auto;
 }
 
 h2 {
@@ -25,7 +21,7 @@ h2 {
 }
 
 .background-only {
-    background: linear-gradient(to top left , rgb(99, 219, 243) 0%, rgb(25, 144, 180) 80%);
+    background: linear-gradient(to top left , rgb(57, 160, 36) 0%, rgb(31, 233, 98) 80%);
 }
 
 /*selected 1 - background: linear-gradient(to bottom right , #0f6b99 0%, #59B3B3 150%);
