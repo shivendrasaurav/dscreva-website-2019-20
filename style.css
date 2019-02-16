@@ -40,7 +40,7 @@ body{ background: #fdfde8; }
 .success{ background: #008000; color: #FFF; }
 .fullscreen{
     width: 101%;
-    height: 102.5%;
+    min-height: 102.5%;
     margin: -0.5%;
 }
 
@@ -53,7 +53,7 @@ body{ background: #fdfde8; }
     display: block;
 }
 
-.col{display: inline-block;}
+.columns{display: block;}
 
 .heading{position: absolute; bottom: 8px; left: 16px; background: transparent;}
 
@@ -309,3 +309,17 @@ iframe{
 }
 a{text-decoration: none; color: #000;}
 a:visited{color: #000;}
+
+.person{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+.person_name{
+    margin-left: auto;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Product Sans';
+}
