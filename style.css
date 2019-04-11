@@ -335,3 +335,32 @@ a:visited{color: #000;}
     height: 200px;
     margin: 12px;
 }
+.modalcontainer{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #000;
+    color: #FFF;
+    display: none;
+}
+.modal{
+  position: absolute;
+  left:0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background: #000;
+  color: #FFF;
+  width: 80%;
+  height: 88%;
+  margin: auto;
+  transition: 300ms;
+}
+
+.gallerymodimg{
+    width:80%;
+    
+}
