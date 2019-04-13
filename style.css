@@ -34,7 +34,7 @@ body{ background: #fdfde8; }
 .alert{ background: #de1738; color: #fff; }
 .success{ background: #008000; color: #FFF; }
 .fullscreen{
-    width: 101%;
+    min-width: 100%;
     min-height: 102.5%;
     margin: -0.5%;
     padding: 4%;
@@ -58,7 +58,7 @@ body{ background: #fdfde8; }
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
     .heading{position: absolute; top: 8px; left: 4%; background: transparent; font-size: 64px;}
-    .fullscreen{width: 104%; margin: -2%; min-height: 102%;}
+    .fullscreen{min-width: 100%; margin: -2%; min-height: 102%;}
     #two{min-height: 150%;}
     #four{min-height: 150%;}    
     #three{min-height: 120%;}
@@ -326,7 +326,7 @@ a:visited{color: #000;}
 .person_name.btmspc{padding-bottom:10%;}
 
 .footer{
-    width: 104%;
+    min-width: 100%;
     margin: -2%;
     padding: 2%;
     background: linear-gradient(to bottom right , #344964 0%, #193C50 105%);
@@ -364,7 +364,9 @@ a:visited{color: #000;}
 
 .gallerymodimg{
     width:80%;
-    
+    display: block;
+    margin: auto;
+    height: auto;
 }
 
 .galleryicon{
@@ -373,4 +375,20 @@ a:visited{color: #000;}
     background: transparent;
     color:white;
     font-size:32px;
+}
+
+@media (max-width: 700px) {
+    .gallerymodimg{
+        width: 100%;
+        margin-top: 12.5%;
+    }
+    .modal{
+        margin-top: 10%;
+    }
+    .galleryimg{
+        height: auto;
+    }
+    .jumbotron{
+        font-size: 64px;
+    }
 }
