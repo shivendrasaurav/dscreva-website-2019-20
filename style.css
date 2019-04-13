@@ -25,6 +25,7 @@
     box-sizing: border-box;
     transition: 300ms;
     background: transparent;
+    font-family: 'Product Sans';
 }
 
 body{ background: #fdfde8; }
@@ -301,7 +302,7 @@ button.primary.tab:focus{
     }
 }
 
-iframe{
+iframe,.eventcard{
     width: 100%;
     height: 240px;
     border: none;
