@@ -5,7 +5,8 @@
     background-attachment: fixed;
 }
 #two{
-    background: linear-gradient(to bottom right , #FFF 40%, #FFBA8C 100%); /*59B3B3*/
+    background: #f7f1de;
+    /* background: linear-gradient(to bottom right , #FFF 40%, #FFBA8C 100%); 59B3B3*/
 }
 #three{
     background: url('team.jpg');
@@ -13,8 +14,9 @@
     background-attachment: fixed;
 }
 #four{
-    /*background:linear-gradient(to bottom right , #F2D16D 0%, #D9FA41 50%, #C02641 80.5%);*/
-    background:linear-gradient(to bottom right , #63E7D5 0%, #344964 105%);
+    /*background:linear-gradient(to bottom right , #F2D16D 0%, #D9FA41 50%, #C02641 80.5%);
+    background:linear-gradient(to bottom right , #63E7D5 0%, #344964 105%);*/
+    background: #f7f1de;
 }
 .jumbotron{
     font-family: 'Product Sans', sans-serif;
