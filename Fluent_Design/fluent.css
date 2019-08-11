@@ -22,10 +22,17 @@ a,p,pre{font-size: 24px; font-weight: 100;}
 .ta_left{text-align: left;}
 .ta_right{text-align: right;}
 .ta_center{text-align: center;}
+
 /*Grid*/
+.fullscreen{
+    min-width: 98%;
+    min-height: 98%;
+    padding: 4%;
+    padding-top: 2%;
+}
 .page_container,.nav_container{
     display: block;
-    width: 88%;
+    width: 85%;
     margin: auto;
 }
 footer{position: relative;}
@@ -35,6 +42,9 @@ footer{position: relative;}
 .center{display: block; margin: auto;}
 .left{display: block; float: left;}
 .right{display: block; float: right;}
+.middle{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);
+}
 
 /*For Large Screens*/
 
@@ -166,14 +176,14 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
     top: var(--y);
     width: var(--size);
     height: var(--size);
-    background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.5), transparent);
+    background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0), transparent);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     transition: width .05s ease, height .05s ease;
 }
-.frost_container:hover::before {--size: 180px;}
-.frost_container:active::before {--size: 4000px; transition: 200ms ease; background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.8), transparent);}
-.frost_container:hover{border: 1.5px solid transparent;}
+.frost_container:hover::before {--size: 0px;}
+.frost_container:active::before {--size: 4000px; transition: 1s ease; background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.4), transparent);}
+.frost_container:hover{border: none;}
 
 /*Inputs*/
 
