@@ -182,7 +182,7 @@ button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
     transition: width .05s ease, height .05s ease;
 }
 .frost_container:hover::before {--size: 0px;}
-.frost_container:active::before {--size: 4000px; transition: 1s ease; background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.4), transparent);}
+.frost_container:active::before {--size: 1000px; transition: 1s ease; background: radial-gradient(circle closest-side, rgba(125, 125, 125, 0.4), transparent);}
 .frost_container:hover{border: none;}
 
 /*Inputs*/
