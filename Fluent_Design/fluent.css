@@ -61,6 +61,7 @@ footer{position: relative;}
     .large3{width: 25%;}
     .large2{width: 16.666666666666666666666666666667%;}
     .large1{width: 8.333333333333333333333333333333%;}
+    .large0{display: none;}
 }
 
 /*For Medium Screens*/
@@ -78,6 +79,7 @@ footer{position: relative;}
     .medium3{width: 25%;}
     .medium2{width: 16%;}
     .medium1{width: 8%;}
+    .medium0{display: none;}
 }
 
 /*For Small Screens*/

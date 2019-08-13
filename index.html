@@ -8,9 +8,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <meta name="keywords" content="gdg, reva, devfest, google, programming, android, chrome, developers, bengaluru, reva university, dsc, dscreva, dsc2019, reva2019 " />
         <link rel="shortcut icon" href="title.png" />
+        <link href="Fluent_Design/Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
+        <script>
+            function showsidenav(){
+                document.getElementById("side1").style.display=("block");
+                document.getElementById("body").style.filter=("blur(20px)");
+            }
+            function hidesidenav(){
+                document.getElementById("side1").style.display=("none");
+                document.getElementById("body").style.filter=("blur(0px)");
+            }
+        </script>
     </head>
-    <body>
-        <div class="large12 medium12 small0 zi2" style="background: rgba(255, 255, 255, 1); position: sticky; top:0px; padding-left: 10%; padding-right: 10%;">
+    <body onload="hidesidenav();">
+        <div id="body">
+        <div class="large12 medium0 small0 zi2" style="background: rgba(255, 255, 255, 1); position: sticky; top:0px; padding-left: 10%; padding-right: 10%;">
             <div class="pivot_container" style="padding: 4px;">
                 <img style="width:60px;" src="home.png">
                 <button class="frost_container right" onmouseover="frosting()" style="background: rgba(255, 255, 255, 0.0);">
@@ -27,8 +39,17 @@
                 </button>
             </div>
         </div>
+        <div class="large0 medium12 small12 zi2" style="background: rgba(255, 255, 255, 1); position: sticky; top:0px; padding-left: 10%; padding-right: 10%; z-index: 4;">
+            <div class="pivot_container">
+                <img style="width: 60px;" src="home.png">
+                <button class="frost_container right icon" onmouseover="frosting();" onclick="showsidenav();" style="background: rgba(255, 255, 255, 0); margin-top: 9px;">
+                    <span class="frost"><i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i></span>
+                </button>
+            </div>
+        </div>
         <div id="one" class="fullscreen" style="background: url('bg.jpeg'); background-size: cover;">
-            <div class="middle" style="width: 90%;">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div style="width: 90%; margin-left: 5%;">
                 <h2 class="ta_center">DSC REVA</h2>
                 <b><p class="ta_center">Developers Students Club | Powered By Google Developers</p></b>
             </div>
@@ -97,7 +118,19 @@
                 <a href="https://github.com/dscreva"><img src="gh.png" style="width:50px; border-radius: 360px;"/></a>
             </div>
         </div>
+    </div>
     </body>
+    <div class="sidepanel_container" id="side1">
+        <div class="sidepanel_content zi3 right" id="modct1">
+            <button class="primary_red right ta_center" onclick="hidesidenav();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button><br><br><br><br>
+            <div class="page_container">
+                <p class="large12 panel_item">About</p>
+                <p class="large12 panel_item">Team</p>
+                <p class="large12 panel_item">Events</p>
+                <p class="large12 panel_item">Contact</p>
+            </div>
+        </div>
+    </div>
 </html>
 <!--
         <div id="thre"><br><br>
