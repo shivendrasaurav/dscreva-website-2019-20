@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="manifest" href="manifest.json">
         <meta name="Description" content="Official Website for Developers Student Club REVA University Powered By Google Developers Group">
         <title>Developer Student Club - REVA University</title>
         <link href="Fluent_Design/normalize.css" rel="stylesheet" type="text/css">
@@ -19,6 +20,14 @@
             function hidesidenav(){
                 document.getElementById("side1").style.display=("none");
                 document.getElementById("body").style.filter=("blur(0px)");
+            }
+            if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                    });
+            });
             }
         </script>
     </head>
