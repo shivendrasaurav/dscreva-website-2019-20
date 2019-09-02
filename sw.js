@@ -6,6 +6,8 @@ const staticAssets = [
   'https://dscreva.github.io/index.html',
   'https://dscreva.github.io/team.html',
   'https://dscreva.github.io/events.html',
+  'https://dscreva.github.io/manifest.json',
+  'https://dscreva.github.io/sw.js',
 ];
 
 self.addEventListener('install', async e => {
