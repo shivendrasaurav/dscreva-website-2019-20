@@ -55,16 +55,17 @@
                 </button>
             </div>
         </div>
-        <div id="one" class="fullscreen" style="background: url('bg.jpeg'); background-size: cover;">
+        <section id="one" class="fullscreen" style="background: url('bg.jpeg'); background-size: cover;">
             <br><br><br><br><br><br><br><br><br><br><br><br>
             <div style="width: 90%; margin-left: 5%;">
                 <h2 class="ta_center">DSC REVA</h2>
                 <b><p class="ta_center">Developers Students Club | Powered By Google Developers</p></b>
             </div>
-        </div>
+        </section>
         <br><br><br><br>
-        <div id="two" class="fullscreen">
-            <div class="column large6 medium6 small12 left page_container zi3" style="min-height: 100%; background: #FFFFDD;" >
+
+             <section id="two" class="page_container">
+            <div class="column large6 medium6 small12 page_container zi1" style="min-height: 100%; background: #FFFFDD;" >
                 <br><br><br><br>
                 <h3 class="ta_center">About DSC</h3><br><br>
                 <p class="column large8 center" style="font-size: 24px;">
@@ -75,27 +76,34 @@
                 </p>
                 <br><br>
                 <a href="https://developers.google.com/programs/dsc/" style="text-decoration: none; font-size:16px;"><button class="frost_container primary_green center" onmouseover="frosting();">
-                    <span class="frost">Google Developers</span>
+                    <span class="frost">More About DSC</span>
                 </button></a>
             </div>
-            <div class="column large6 medium6 small0 right" style="min-height: 100%; width: 50%; background: url('aboutbackground.JPG'); background-size: cover;">
+            <div class="column large6 medium6 small0" style="min-height: 100%;">
+                    <img src="aboutbackground.JPG">
             </div>
-            <div class="column large6 medium6 small12 left page_container" style="min-height: 100%;" >
+            <div class="column large6 medium6 small12 page_container" style="min-height: 100%;" >
                 <br><br><br><br>
                 <h3 class="ta_center">Domains</h3><br><br>
                 <p class="column large8 center" style="font-size: 24px;">
                     There are no any domain restrictions in a DSC, and these are the domains in which we Excel.
                     <br><br>
-                    <button class="panel_item secondary_green">Cloud Computing</button>
-                    <button class="panel_item primary_red">Technical</button>
-                    <button class="panel_item primary_yellow">Photography</button>
-                    <button class="panel_item primary_inverted">Event Management</button>
-                    <button class="panel_item secondary_green">Web Development</button>
-                    <button class="panel_item primary_blue">Hackathons</button>
+                    <div class="page_container center">
+                        <ul class="column large6 medium6 small12">
+                            <li>Cloud Computing</li>
+                            <li>Technical</li>
+                            <li>Photography</li>
+                        </ul>
+                        <ul class="column large6 medium6 small12">
+                            <li>Web Development</li>
+                            <li>Event Management</li>
+                            <li>Hackathons</li>
+                        </ul>
+                    </div>
                 </p>
                 <br><br>
             </div>
-            <div class="column large6 medium6 small12 left page_container zi3" style="min-height: 100%; background: #FFDDDD;" >
+            <div class="column large6 medium6 small12 page_container zi1" style="min-height: 100%; background: #FFDDDD;" >
                 <br><br><br><br>
                 <h3 class="ta_center">What We Do</h3><br><br>
                 <p class="column large8 center" style="font-size: 26px; font-weight: 400">
@@ -106,9 +114,9 @@
                 <br><br>
             </div>
 
-        </div>
+        </section>
         <br><br><br><br>
-        <div id="three" style="width:90%; display:block; margin:auto;">
+        <footer id="three" style="width:90%; display:block; margin:auto;" class="secondary_green">
             <div class="column large6 medium6 small12">
                 <p style="font-size: 28px;">DSC REVA - Powered By Google Developers</p>
                 <p>
@@ -117,13 +125,13 @@
                     Bengaluru, 560064
                 </p>
             </div>
-            <div class="column large6 medium6 small12 right">
+            <div class="column large6 medium6 small12">
                 <p style="font-size: 28px;">Follow Us On</p>
                 <a href="https://www.facebook.com/dscreva/"><img alt="facebook" src="fb.png" style="width:50px;"/></a>&nbsp;&nbsp;
                 <a href="https://www.instagram.com/dscreva/"><img alt="instagram" src="ig.png" style="width:50px;"/></a>&nbsp;&nbsp;
                 <a href="https://github.com/dscreva"><img alt="github" src="gh.png" style="width:50px; border-radius: 360px;"/></a>
             </div>
-        </div>
+        </footer>
     </div>
     </body>
     <div class="sidepanel_container" id="side1" style="display: none;">
@@ -137,3 +145,51 @@
         </div>
     </div>
 </html>
+ <!--
+        <section id="two" class="page_container">
+            <div class="column large5 medium6 small12 zi2 secondary_blue">
+                <div class="page_container center">
+                    <h5>About DSC REVA</h5>
+                    <p style="font-size: 24px;">
+                        A Developer Students Club is a Google Developers recognized student body 
+                        at a college which directly reports to Google for their activities 
+                        and is supported by the tech giant.A DSC conducts workshops, 
+                        seminars and other fun activities which help the students connect with Google.                     
+                    </p>
+                </div>
+            </div>
+            
+            <div class="column large5 medium6 small12 zi2 secondary_green">
+                <div class="page_container center">
+                    <h5>What We Do</h5>
+                    <p style="font-size: 24px;">
+                            Google Developer Clubs can take many forms - from just a few people getting together to watch some videos, 
+                            to large gatherings with demos, tech talks, hackathons and conferences. We work on various technical 
+                            domains and try to make use of Google Technologies to empower the audience around us.                    
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="column large8 medium8 small12 center zi1">
+                <div class="page_container center">
+                    <h5>Domains</h5>
+                    <p style="font-size: 24px;">
+                        There are no any domain restrictions in a DSC, and these are the domains in which we Excel.
+                    </p>
+                    <div class="page_container">
+                        <ul class="column large5 medium5 small12">
+                            <li>Cloud Computing</li>
+                            <li>Technical</li>
+                            <li>Photography</li>
+                        </ul>
+                        <ul class="column large5 medium5 small12">
+                            <li>Web Development</li>
+                            <li>Event Management</li>
+                            <li>Hackathons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+  

@@ -54,7 +54,7 @@ footer{position: relative;}
     .large9{width: 75%;}
     .large8{width: 66.666666666666666666666666666667%;}
     .large7{width: 58.3333333333333333333333333333333%;}
-    .large6{width: 50%;}
+    .large6{width: 49%;}
     .large5{width: 41.666666666666666666666666666667%;}
     .large4{width: 33.333333333333333333333333333333%;}
     .large3{width: 25%;}
@@ -97,9 +97,11 @@ footer{position: relative;}
 
 /*Elevation*/
 
-.zi{box-shadow:  0 0.1px 0.4px 0 rgba(0, 0, 0, 0.4), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.38); transition: 250s ease;}
+.zi0{
+    box-shadow:  0 0.4px 1px 0 rgba(0, 0, 0, 0.4), 0 0.1px 4px 0 rgba(0, 0, 0, 0.38);
+    transition: 250s ease;}
 .zi1{
-    box-shadow:  0 0.4px 1px 0 rgba(0, 0, 0, 0.4), 0 0.3px 1px 0 rgba(0, 0, 0, 0.38);
+    box-shadow:  0 0px 0px 0 rgba(0, 0, 0, 0.4), 0 0px 0px 0 rgba(0, 0, 0, 0.38);
     transition: 250ms ease;
 }
 .zi2{
@@ -114,11 +116,11 @@ footer{position: relative;}
     box-shadow:  0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 8px 24px 0 rgba(0, 0, 0, 0.38);
     transition: 250ms ease;
 }
-.zi:hover{box-shadow:  0.4px 0 1px 0 rgba(0, 0, 0, 0.4), 0 0.4px 1.5px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
-.zi1:hover{box-shadow:  1.5px 0 3px 0 rgba(0, 0, 0, 0.4), 0 1.5px 4.5px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
-.zi2:hover{box-shadow:  3px 0 6px 0 rgba(0, 0, 0, 0.4), 0 3px 9px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
-.zi3:hover{box-shadow:  6px 0 12px 0 rgba(0, 0, 0, 0.4), 0 4px 12px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
-.zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi0:hover{box-shadow:  0px 1.5px 3px 0px rgba(0, 0, 0, 0.4), 0 0.4px 1.5px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi1:hover{box-shadow:  0px 1.5px 3px 0px rgba(0, 0, 0, 0.4), 0 0.5px 1.5px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi2:hover{box-shadow:  0px 3px 6px 0px rgba(0, 0, 0, 0.4), 0 3px 9px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi3:hover{box-shadow:  0px 6px 12px 0px rgba(0, 0, 0, 0.4), 0 4px 12px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
+.zi4:hover{box-shadow:  0px 12px 24px 0px rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
 /*Colors*/
 .primary_blue{background: #08415C; color:#FFF;}
@@ -148,7 +150,7 @@ button,.button{
     text-align: center;
 }
 button.large,.button.large{width: 60%; height: 10%; font-size: 120%;}
-button.icon,.button.icon{height:40px; width: 40px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%;}
+button.icon,.button.icon{height:50px; width: 50px; border: 1px solid rgba(0, 0, 0, 0.0); margin-left: 1%; margin: 2px;}
 button.icon:hover,.button.icon:hover{border: 1px solid rgba(0, 0, 0, 0.4);}
 .circular{border-radius: 100%;}
 .tab::before{display: none;}
