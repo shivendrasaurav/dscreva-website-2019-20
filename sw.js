@@ -1,7 +1,6 @@
 const cacheName = 'dscreva';
 const staticAssets = [
   'https://dscreva.github.io/',
-  'https://dscreva.github.io/*',
   'https://dscreva.github.io/title.png',
   'https://dscreva.github.io/index.html',
   'https://dscreva.github.io/team.html',
