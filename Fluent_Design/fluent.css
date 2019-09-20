@@ -54,7 +54,7 @@ footer{position: relative;}
     .large9{width: 75%;}
     .large8{width: 66.666666666666666666666666666667%;}
     .large7{width: 58.3333333333333333333333333333333%;}
-    .large6{width: 49%;}
+    .large6{width: 48%;}
     .large5{width: 41.666666666666666666666666666667%;}
     .large4{width: 33.333333333333333333333333333333%;}
     .large3{width: 25%;}
@@ -72,7 +72,7 @@ footer{position: relative;}
     .medium9{width: 75%;}
     .medium8{width: 66%;}
     .medium7{width: 58%;}
-    .medium6{width: 50%;}
+    .medium6{width: 49%;}
     .medium5{width: 41%;}
     .medium4{width: 33%;}
     .medium3{width: 25%;}
@@ -84,7 +84,7 @@ footer{position: relative;}
 /*For Small Screens*/
 
 @media (min-width: 320px) and (max-width: 639px) {
-    .small12,.small11{width: 100%;}
+    .small12,.small11{width: 100%; display: block; margin: auto;}
     .small10{width: 83.3333333333333333333333333333333%;}
     .small9{width: 75%;}
     .small8,.small7{width: 66.666666666666666666666666666667%;}
