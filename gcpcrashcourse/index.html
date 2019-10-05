@@ -1,0 +1,258 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title of the webpage -->
+    <title>#GCPCrashCourse at DSC HITS</title>
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap" rel="stylesheet">
+
+    <!-- Linking Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Linking bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Linking CSS Files -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Linking bootstrap CSS Files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- Linking JS Files -->
+    <script src="js/index.js"></script>
+
+    <!-- Adding PWA Capabilities -->
+    <link rel="manifest" href="manifest.json">
+
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./sw.js')
+            .then(function() {
+                  console.log('Service Worker Registered');
+            });
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- Landing section -->
+    <div class="main">
+
+        <div class="main-content-holder">
+
+            <!-- Heading -->
+            <h1>#GCPCrashCourse</h1>
+
+            <!-- DSC Logo -->
+            <div class="dsc-logo"></div>
+
+            <!-- Know More Button -->
+            <div class="know-more-button">Know More</div>
+
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+
+    <div class="main-about">
+
+        <!-- About Section -->
+        <div style="padding-bottom: 40px;">
+
+            <!-- About Section Heading -->
+            <h1>About #GCPCrashCourse</h1>
+
+            <!-- About Section Paragraph -->
+            <p>Ever thought of learning about Google Cloud Platform? We've got you covered. DSC HITS in collaboration with Developer Student Clubs and Qwiklabs brings to you #GCPCrashCourse, the best way to get started with Google Cloud Platform.</p>
+
+        </div>
+
+         <!-- Tracks Section -->
+        <div style="padding-bottom: 60px;">
+
+            <!-- Tracks Section Heading -->
+            <h1>We have three exciting tracks for you</h1>
+
+            <!-- Tracks Section Pargraph -->
+            <p>Click on a track to get enrolled in it:</p>
+
+            <!-- Tracks Section Icons -->
+            <div class="main-about-icon">
+
+                <div class="icon-holder">
+                    <div class="icon data" data-toggle="modal" data-target="#DataModal"></div>
+                    <div class="icon-text">Data Science</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon android" data-toggle="modal" data-target="#AppModal"></div>
+                    <div class="icon-text">App Development</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon ml" data-toggle="modal" data-target="#MLModal"></div>
+                    <div class="icon-text">Machine Learning</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Data Modal -->
+        <div class="modal fade" id="DataModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Data Science track</h4>
+              </div>
+              <div class="modal-body">
+                <p>List of quest to be completed</p>
+                <ul>
+                  <li><a href="https://google.qwiklabs.com/quests/34?qlcampaign=6p-EDU-DSC-GCC-31">Baseline: Data, ML, AI</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/55?qlcampaign=6p-EDU-DSC-GCC-31">BigQuery For Data Analysis</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/28?qlcampaign=6p-EDU-DSC-GCC-31">Scientific Data Processing</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/25?qlcampaign=6p-EDU-DSC-GCC-31">Data Engineering</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/43?qlcampaign=6p-EDU-DSC-GCC-31">Data Science on the Google Cloud Platform</a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Modal -->
+        <div class="modal fade" id="AppModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Applciation Development track</h4>
+              </div>
+              <div class="modal-body">
+                <p>List of quest to be completed</p>
+                <ul>
+                  <li><a href="https://google.qwiklabs.com/quests/37?qlcampaign=6p-EDU-DSC-GCC-31">Baseline: Deploy &#38; Develop</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/39?qlcampaign=6p-EDU-DSC-GCC-31">Websites and Web Applications</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/26?qlcampaign=6p-EDU-DSC-GCC-31">Deploying Applications</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/67?qlcampaign=6p-EDU-DSC-GCC-31">Cloud Development</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/54?qlcampaign=6p-EDU-DSC-GCC-31">Exploring APIs</a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML Modal -->
+        <div class="modal fade" id="MLModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Machine Learning track</h4>
+              </div>
+              <div class="modal-body">
+                <p>List of quest to be completed</p>
+                <ul>
+                  <li><a href="https://google.qwiklabs.com/quests/34?qlcampaign=6p-EDU-DSC-GCC-31">Baseline: Data, ML, AI</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/82?qlcampaign=6p-EDU-DSC-GCC-31">Intro to ML: Language Processing</a> <span>OR</span> <a href="https://google.qwiklabs.com/quests/85?qlcampaign=6p-EDU-DSC-GCC-31">Intro to ML: Image Processing</a> </li>
+                  <li><a href="https://google.qwiklabs.com/quests/71?qlcampaign=6p-EDU-DSC-GCC-31">BigQuery for Machine Learning</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/83?qlcampaign=6p-EDU-DSC-GCC-31">Intermediate ML: TensorFlow on GCP</a></li>
+                  <li><a href="https://google.qwiklabs.com/quests/32?qlcampaign=6p-EDU-DSC-GCC-31">Machine Learning APIs</a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rewards section -->
+        <div style="padding-bottom: 60px;">
+
+            <!-- Rewards Section Heading -->
+            <h1>Nothing's fun without rewards</h1>
+
+            <!-- Rewards Section Pargraph -->
+            <p>Any one who completes at least one Quest in this month is eligible for Goodies</p>
+
+            <!-- Rewards Section Icons -->
+            <div class="main-about-icon">
+
+                <div class="icon-holder">
+                    <div class="icon hoodie"></div>
+                    <div class="icon-text">Hoodies</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon pen"></div>
+                    <div class="icon-text">Schwags</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon certificate"></div>
+                    <div class="icon-text">Certification</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Steps section -->
+        <div style="padding-bottom: 60px;">
+
+            <!-- Steps Section Heading -->
+            <h1>Three Simple Rules</h1>
+
+            <!-- Steps Section Pargraph -->
+            <p>Follow these simple rules and you're golden:</p>
+
+            <!-- Steps Section Icons -->
+            <div class="main-about-icon">
+
+                <div class="icon-holder-two">
+                    <div class="icon-two step-one"></div>
+                    <div class="icon-text-two">One week One quest</div>
+                </div>
+
+                <div class="icon-holder-two">
+                    <div class="icon-two step-two"></div>
+                    <div class="icon-text-two">Complete 1 track &#38; Fill this <a href="http://bit.ly/CSJwithDSCHITS" style="font-weight:bold" target="_blank">form</a> and receive goodies!</div>
+                </div>
+
+                <div class="icon-holder-two">
+                    <div class="icon-two step-three"></div>
+                    <div class="icon-text-two">Participant should have completed all the quests in atleast 1 track to receive goodies!</div>
+                </div>
+
+                <div class="icon-holder-two">
+                    <div class="icon-two step-four"></div>
+                    <div class="icon-text-two">Let's celebrate.Tweet after you receive goodies. Tag us <span style="font-weight:bold">@dsc_hits @GoogleDevsIN #GCPCrashCourse #CSJwithDSCHITS #DSCHITS #DeveloperStudentClubs #DSCIndia #CloudStudyJams19 #GoogleCloud</sapn></div>
+                </div>
+
+            </div>
+
+        </div>
+		<div class="faq-button" onclick="window.open('faq.html')">FAQs</div>
+
+    </div>
+	
+
+ 
+</body>
+</html>
