@@ -43,8 +43,8 @@ body{
 
 .dsc-logo{
     height: 15%;
-    width: 35%;
-    background: url('../images/horizontal_logo.svg') center center no-repeat;
+    width: 50%;
+    background: url('../images/logo.png') center center no-repeat;
     background-size:70% auto;
     margin: auto auto;
 }
@@ -248,7 +248,7 @@ body{
 
 @media only screen and (max-width:740px){
     .dsc-logo{
-        width: 70%;
+        width: 100%;
     }
 
     .main-about h1{
