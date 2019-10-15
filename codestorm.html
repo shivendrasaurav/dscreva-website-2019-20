@@ -1,11 +1,135 @@
 <html>
     <head>
-        <title>Developer Student Club - REVA University - CODESTORM</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Developer Student Club - REVA University</title>
+        <link href="Fluent_Design/normalize.css" rel="stylesheet" type="text/css">
+        <link href="Fluent_Design/fluent.css" rel="stylesheet" type="text/css">
+        <link href="Fluent_Design/Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
+        <script src="Fluent_Design/fluent.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="gallery.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="gdg, reva, devfest, google, programming, android, chrome, developers, bengaluru, reva university, dsc, dscreva, dsc2019, reva2019 ">
+        <link rel="shortcut icon" href="title.png">
+        <script>
+            function showsidenav(){
+                document.getElementById("side1").style.display=("block");
+                document.getElementById("body").style.filter=("blur(20px)");
+            }
+            function hidesidenav(){
+                document.getElementById("side1").style.display=("none");
+                document.getElementById("body").style.filter=("blur(0px)");
+            }
+        </script>
+        <script src="slideshowcodestorm.js"></script>
     </head>
+
+    <body onload="hidesidenav(); showone();" style="background: #EEE;">
+            <div id="body" style="height: 92%;" class="fullscreen">
+                <div class="large12 medium0 small0 zi2" style="background: rgba(255, 255, 255, 1); position: sticky; top:0px; padding-left: 10%; padding-right: 10%; z-index: 4;">
+                        <div class="pivot_container" style="padding: 4px;">
+                            <img style="width:60px;" src="home.png">
+                            <a href="events.html"><button class="frost_container right" onmouseover="frosting()" style="background: rgba(255, 255, 255, 0); --x:22px; --y:33px;">
+                                <span class="frost">Events</span>
+                            </button></a>
+                            <a href="team.html"><button class="frost_container right" onmouseover="frosting()" style="background: rgba(255, 255, 255, 0); --x:22px; --y:33px;">
+                                <span class="frost">Team</span>
+                            </button></a>
+                            <a href="index.html"><button class="frost_container right" onmouseover="frosting()" style="background: rgba(255, 255, 255, 0); --x:4px; --y:30px;">
+                                <span class="frost">Home</span>
+                            </button></a>
+                        </div>
+                </div>
+                <div class="large0 medium12 small12 zi2" style="background: rgba(255, 255, 255, 1); position: sticky; top:0px; padding-left: 10%; padding-right: 10%; z-index: 4;">
+                    <div class="pivot_container">
+                        <img style="width: 60px;" src="home.png">
+                        <button class="frost_container right icon" onmouseover="frosting();" onclick="showsidenav();" style="background: rgba(255, 255, 255, 0); margin-top: 9px;">
+                        <span class="frost"><i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="intro" class="page_container">
+                    <img src="./thumbnail_img/cs2019.jpg">
+                </div>
+                <br><br><br><br>
+                <div id="winners" class="page_container">
+                    <h3>Winners</h3>
+                    <div class="column large6 medium6 small12">
+                            <button class="panel_item secondary_blue">Clash (AR Solutions)</button><br><br>
+                            <button class="panel_item secondary_blue">Hack Linguist (VR Tour)</button><br><br>
+                            <button class="panel_item secondary_blue">Tech Army (Encrypt/Decrypt)</button><br><br>
+                            <button class="panel_item secondary_blue">Unknown Errors (RFID Traffic Control)</button><br><br>
+                    </div>
+                    <div class="column large6 medium6 small12">
+                            <button class="panel_item secondary_blue">Tech Ninjas (Smart Lock)</button><br><br>
+                            <button class="panel_item secondary_blue">Emergence (Automated Gas Stove)</button><br><br>
+                            <button class="panel_item secondary_blue">REVA Rangers (Foundrr)</button><br><br>
+                            <button class="panel_item" style="color:transparent; background: transparent;">HiddenElement </button><br><br>
+                        </div>
+                </div>
+                
+                <br><br><br><br>
+                
+                <div id="gallery" class="page_container">
+                    <h3>Gallery</h3>
+                    <div class="column large10 medium10 small12 center">
+                        <img id="one" src="./codestorm_2019_img/1.JPG">
+                        <img id="two" src="./codestorm_2019_img/2.JPG">
+                        <img id="three" src="./codestorm_2019_img/3.JPG">
+                        <img id="four" src="./codestorm_2019_img/4.JPG">
+                        <img id="five" src="./codestorm_2019_img/5.JPG">
+                        <img id="six" src="./codestorm_2019_img/6.JPG">
+                        <img id="seven" src="./codestorm_2019_img/7.JPG">
+                        <img id="eight" src="./codestorm_2019_img/8.JPG">
+                        <img id="nine" src="./codestorm_2019_img/9.JPG">
+                        <img id="ten" src="./codestorm_2019_img/10.JPG">
+                    </div>
+                    <div class="column large7 medium7 small8 center">
+                        <button onclick="showone();" class="icon primary_inverted">1</button>
+                        <button onclick="showtwo();" class="icon primary_inverted">2</button>
+                        <button onclick="showthree();" class="icon primary_inverted">3</button>
+                        <button onclick="showfour();" class="icon primary_inverted">4</button>
+                        <button onclick="showfive();" class="icon primary_inverted">5</button>
+                        <button onclick="showsix();" class="icon primary_inverted">6</button>
+                        <button onclick="showseven();" class="icon primary_inverted">7</button>
+                        <button onclick="showeight();" class="icon primary_inverted">8</button>
+                        <button onclick="shownine();" class="icon primary_inverted">9</button>
+                        <button onclick="showten();" class="icon primary_inverted">10</button>
+                    </div>
+                </div>
+                
+            <div id="three" style="width:90%; display:block; margin:auto;" class="primary_green">
+                    <div class="column large6 medium6 small12">
+                        <p style="font-size: 28px;">DSC REVA - Powered By Google Developers</p>
+                        <p>
+                            REVA University<br>
+                            Kattigenahalli, Yelahanka<br>
+                            Bengaluru, 560064
+                        </p>
+                    </div>
+                    <div class="column large6 medium6 small12 right">
+                        <p style="font-size: 28px;">Follow Us On</p>
+                        <a href="https://www.facebook.com/dscreva/"><img src="fb.png" style="width:50px;"/></a>&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/dscreva/"><img src="ig.png" style="width:50px;"/></a>&nbsp;&nbsp;
+                        <a href="https://github.com/dscreva"><img src="gh.png" style="width:50px; border-radius: 360px;"/></a>
+                    </div>
+            </div>
+     
+            </div>
+    </body>
+
+<div class="sidepanel_container" id="side1" style="display: none;">
+    <div class="sidepanel_content zi3 right" id="modct1">
+        <button class="primary_red right ta_center" onclick="hidesidenav();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button><br><br><br><br>
+        <div class="page_container">
+            <a href="./index.html"><p class="large12 panel_item">Home</p></a>
+            <a href="./team.html"><p class="large12 panel_item">Team</p></a>
+            <a href="./events.html"><p class="large12 panel_item">Events</p></a>
+        </div>
+    </div>
+</div>
+    
+
+
+<!--
     <body style="background:#f7f1de;">
         <div class="topnav" id="tm">
                 &nbsp;&nbsp;&nbsp;&nbsp;<img src="logo.png" style="border-radius:360px; width: 40px; height: 40px;">
@@ -15,7 +139,7 @@
         <div class="fullscreen" style="background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); color:#DDD;">
             <br><br><div class="jumbotron">CodeStorm 2019</div><br><br>
             <h1>In collaboration with Hackathon Club, REVA University</h1>
-            <div class="date">28th/29th Feb, 2019</div>
+            <div class="date">28thFeb/1stMar, 2019</div>
         </div>
         <div class="fullscreen" >
             <div class="jumbotron">About</div>
@@ -172,4 +296,5 @@
         </div>
 
     </body>
+-->
 </html>

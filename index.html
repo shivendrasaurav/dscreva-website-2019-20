@@ -1,82 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <link rel="manifest" href="manifest.json">
+        <meta name="Description" content="Official Website for Developers Student Club REVA University Powered By Google Developers Group">
         <title>Developer Student Club - REVA University</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="Fluent_Design/normalize.css" rel="stylesheet" type="text/css">
+        <link href="Fluent_Design/fluent.css" rel="stylesheet" type="text/css">
+        <script src="Fluent_Design/fluent.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <meta name="keywords" content="gdg, reva, devfest, google, programming, android, chrome, developers, bengaluru, reva university, dsc, dscreva, dsc2019, reva2019 " />
         <link rel="shortcut icon" href="title.png" />
+        <link href="Fluent_Design/Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
+        <script>
+            function showsidenav(){
+                document.getElementById("side1").style.display=("block");
+                document.getElementById("body").style.filter=("blur(20px)");
+            }
+            function hidesidenav(){
+                document.getElementById("side1").style.display=("none");
+                document.getElementById("body").style.filter=("blur(0px)");
+            }
+            if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                    });
+            });
+            }
+        </script>
     </head>
-    <body>
-        <div id="one" class="fullscreen">
-            <p class="jumbotron heading">
-                <a href="https://goo.gl/forms/MwjvGHAYLOEqhC8T2" style="text-decoration:none;"><button class="large dview" style="border: dashed 2px">Join DSC REVA</button></a>
-                Developers Student Club REVA University
-                <a href="https://goo.gl/forms/MwjvGHAYLOEqhC8T2" style="text-decoration:none;"><button class="large mview" style="border: dashed 2px">Join DSC REVA</button></a>
-            </p>
-        </div>
-        <div id="two" class="fullscreen">
-            <div style="background: transparent;">
-            <p class="jumbotron center" style="color:#555;">About Us</p>
-            <div class="columns large4">
-                <img src="logo1.png" style="border-radius:360px; width: 100%;">
+
+    <body onload="hidesidenav();">
+        <div id="body" class="fullscreen" style="background: #FAFAFA;">
+        <div class="large12 medium0 small0 zi2" style="background: rgba(255, 255, 255, 1); position: sticky; top:0px; padding-left: 10%; padding-right: 10%;">
+            <div class="pivot_container" style="padding: 4px;">
+                <img style="width:60px;" src="home.png" alt="dsc_logo">
+                <a href="/gcpcrashcourse/index.html"><button class="frost_container right" onmouseover="frosting()" style="background: rgba(255, 255, 255, 0.0);">
+                        <span class="frost" style="font-size: 12px">GCP Crash Course</span>
+                    </button></a>    
+                <a href="events.html"><button class="frost_container right" onmouseover="frosting()" style="background: rgba(255, 255, 255, 0.0);">
+                    <span class="frost">Events</span>
+                </button></a>
+                <a href="team.html"><button class="frost_container right" onmouseover="frosting()" style="background: rgba(255, 255, 255, 0.0);">
+                    <span class="frost">Team</span>
+                </button></a>
+                <a href="#two"><button class="frost_container right" onmouseover="frosting()" style="background: rgba(255, 255, 255, 0.0);">
+                    <span class="frost">About</span>
+                </button></a>
             </div>
-            <div class="large1 columns"></div>
-            <div class="columns large6">
-                    <p style="font-size: 48px;">What Is DSC?</p>
-                    <h2 class="center">
+        </div>
+        <div class="large0 medium12 small12 zi2" style="background: rgba(255, 255, 255, 1); position: sticky; top:0px; padding-left: 10%; padding-right: 10%; z-index: 4;">
+            <div class="pivot_container">
+                <img style="width: 60px;" src="home.png" alt="dsc_logo">
+                <button  aria-label="Menu" class="frost_container right icon" onmouseover="frosting();" onclick="showsidenav();" style="background: rgba(255, 255, 255, 0); margin-top: 9px;">
+                    <span class="frost"><i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i></span>
+                </button>
+            </div>
+        </div>
+        <section id="one" class="fullscreen" style="background: url('bg.jpeg'); background-size: cover;">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div style="width: 90%; margin-left: 5%;">
+                <h3 class="ta_center">DSCREVA</h3>
+                <b><p class="ta_center">Developers Students Club | Powered By Google Developers</p></b>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+        <br><br><br><br>
+
+             <section id="two" class="page_container">
+            <div class="column large6 medium6 small12 page_container zi1" style="min-height: 100%; background: #FFFFDD;" >
+                <br><br><br><br>
+                <h3 class="ta_center">About DSC</h3><br><br>
+                <p class="column large8 center" style="font-size: 24px;">
                         A Developer Students Club is a Google Developers recognized student body 
                         at a college which directly reports to Google for their activities 
                         and is supported by the tech giant.A DSC conducts workshops, 
-                        seminars and other fun activities which help the students connect with Google.
-                    </h2>
+                        seminars and other fun activities which help the students connect with Google.        
+                </p>
+                <br><br>
+                <a href="https://developers.google.com/programs/dsc/" style="text-decoration: none; font-size:16px;"><button class="frost_container primary_green center" onmouseover="frosting();">
+                    <span class="frost">More About DSC</span>
+                </button></a>
             </div>
-        </div>
-        </div>
-        <div id="three" class="fullscreen"><br><br>
-            <p class="jumbotron center" style="color:#555;">The Team</p>
-            <h2 style="background:transparent;" class="large10 center">To make something ambitious as a Student Developer Group, we needed a team. 
-                A team which would stuck together in hard times and help each other out. 
-                So, we searched for them, and gathered the best people of their fields in our university. 
-                We worked together and here we are, ready to face the challenge, 
-                ready to pull this off and shine above all.</h2><br><br>
-                <button class="large dview" style="border: dashed 2px;"><a href="team.html" style="text-decoration: none;"> Meet The Team</a></button>
-                <button class="large mview" style="border: dashed 2px; margin: auto;"><a href="team.html" style="text-decoration: none;"> Meet The Team</a></button>
-
-        </div>
-        <div id="four" class="fullscreen">
-            <div style="background: transparent;">
-            <p class="jumbotron center" style="color:#555;">Events</p>
-            
-            <div class="columns large4" style="padding: 20px;">
-                            <a href="codestorm.html"><img src="thumbnail_img/codestormthubnail.png" class="eventcard polaroid" /></a>
+            <div class="column large6 medium6 small0" style="min-height: 100%;">
+                    <img src="aboutbackground.JPG">
             </div>
-            <div class="columns large4" style="padding: 20px;">
-                            <a href="cloudstudyjam_april2019.html"><img src="thumbnail_img/cloudstudyjamthumbnail.png" class="eventcard polaroid" /></a>
-            </div>
-            </div>
-        </div>
-        <div id="five" class="footer">
-            <div class="columns large6" style="padding:10px;">
-                <h2>Reach Us At :  <br><br> dscreva@gmail.com</h2>
-                <br>
-            </div>
-            <div class="columns large6" style="padding:10px;">
-                <h2>Follow Us On : </h2>
-                <div style="display: inline;"><a href="https://www.facebook.com/dscreva/"><img src="fb.png" style="width:60px; height:60px;"/></a></div>&nbsp;&nbsp;&nbsp;&nbsp;
-                <div style="display: inline;"><a href="https://www.instagram.com/dscreva/"><img src="ig.png" style="width:60px; height:60px;"/></a></div>&nbsp;&nbsp;&nbsp;&nbsp;
-                <div style="display: inline;"><a href="https://github.com/dscreva"><img src="gh.png" style="width:60px; height:60px; border-radius: 360px;"/></a></div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="column large6 medium6 small12 page_container" style="min-height: 100%;" >
+                <br><br><br><br>
+                <h3 class="ta_center">Domains</h3><br><br>
+                <p class="column large8 center" style="font-size: 24px;">
+                    There are no any domain restrictions in a DSC, and these are the domains in which we Excel.
+                    <br><br>
+                    <div class="page_container center">
+                        <ul class="column large6 medium6 small12">
+                            <li>Cloud Computing</li>
+                            <li>Technical</li>
+                            <li>Photography</li>
+                        </ul>
+                        <ul class="column large6 medium6 small12">
+                            <li>Web Development</li>
+                            <li>Event Management</li>
+                            <li>Hackathons</li>
+                        </ul>
+                    </div>
+                </p>
                 <br><br>
             </div>
-        </div>
-        <div class="topnav" id="tm">
-                &nbsp;&nbsp;&nbsp;&nbsp;<img src="logo.png" style="border-radius:360px; height: 50px;">
-                <a href="#five"><button class="tab menu right" style="background:transparent;">Contact</button></a>
-                <a href="#four"><button class="tab menu right" style="background:transparent;">Gallery</button></a>
-                <a href="#three"><button class="tab menu right" style="background:transparent;">Team</button></a>
-                <a href="#two"><button class="tab menu right" style="background:transparent;">About</button></a>
-                <a href="#one"><button class="tab menu right" style="background:transparent;">Home</button></a>
-        </div>
+            <div class="column large6 medium6 small12 page_container zi1" style="min-height: 100%; background: #FFDDDD;" >
+                <br><br><br><br>
+                <h3 class="ta_center">What We Do</h3><br><br>
+                <p class="column large8 center" style="font-size: 26px; font-weight: 400">
+                    Google Developer Clubs can take many forms - from just a few people getting together to watch some videos, 
+                    to large gatherings with demos, tech talks, hackathons and conferences. We work on various technical 
+                    domains and try to make use of Google Technologies to empower the audience around us.
+                </p>
+                <br><br>
+            </div>
+
+        </section>
+        <br><br><br><br>
+        <section id="three" style="width:90%; display:block; margin:auto;" class="secondary_green">
+            <div class="column large6 medium6 small12">
+                <p style="font-size: 28px;">DSC REVA - Powered By Google Developers</p>
+                <p>
+                    REVA University<br>
+                    Kattigenahalli, Yelahanka<br>
+                    Bengaluru, 560064
+                </p>
+            </div>
+            <div class="column large6 medium6 small12">
+                <p style="font-size: 28px;">Follow Us On</p>
+                <a href="https://www.facebook.com/dscreva/"><img alt="facebook" src="fb.png" style="width:50px;"/></a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/dscreva/"><img alt="instagram" src="ig.png" style="width:50px;"/></a>&nbsp;&nbsp;
+                <a href="https://github.com/dscreva"><img alt="github" src="gh.png" style="width:50px; border-radius: 360px;"/></a>
+            </div>
+        </section>
+    </div>
     </body>
+    <div class="sidepanel_container" id="side1" style="display: none;">
+        <div class="sidepanel_content zi3 right" id="modct1">
+            <button class="primary_red right ta_center" onclick="hidesidenav();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button><br><br><br><br>
+            <div class="page_container">
+                <a href="#two" onclick="hidesidenav();"><p class="large12 panel_item">About</p></a>
+                <a href="team.html"><p class="large12 panel_item">Team</p></a>
+                <a href="events.html"><p class="large12 panel_item">Events</p></a>
+                <a href="/gcpcrashcourse/index.html"><p class="large12 panel_item">GCP Crash Course</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="modal_container" id="pop">
+        <div class="modal_content" style="background: radial-gradient(#545454, #000000)">
+                        <button onclick="document.getElementById('pop').style.display=('none');" class="icon primary_red" style="float: right; width: 80px;">
+                                X
+                        </button>                
+                        <div class="middle" style="text-align: center">
+                            <strong><h6 style="color: #FAFAFA;">GCP Crash Course</h6></strong><br>
+                            <a href="/gcpcrashcourse/index.html" style="color: #FAFAFA; font-size: 24px;">Click To Know More</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </html>
+ <!--
+        <section id="two" class="page_container">
+            <div class="column large5 medium6 small12 zi2 secondary_blue">
+                <div class="page_container center">
+                    <h5>About DSC REVA</h5>
+                    <p style="font-size: 24px;">
+                        A Developer Students Club is a Google Developers recognized student body 
+                        at a college which directly reports to Google for their activities 
+                        and is supported by the tech giant.A DSC conducts workshops, 
+                        seminars and other fun activities which help the students connect with Google.                     
+                    </p>
+                </div>
+            </div>
+            
+            <div class="column large5 medium6 small12 zi2 secondary_green">
+                <div class="page_container center">
+                    <h5>What We Do</h5>
+                    <p style="font-size: 24px;">
+                            Google Developer Clubs can take many forms - from just a few people getting together to watch some videos, 
+                            to large gatherings with demos, tech talks, hackathons and conferences. We work on various technical 
+                            domains and try to make use of Google Technologies to empower the audience around us.                    
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="column large8 medium8 small12 center zi1">
+                <div class="page_container center">
+                    <h5>Domains</h5>
+                    <p style="font-size: 24px;">
+                        There are no any domain restrictions in a DSC, and these are the domains in which we Excel.
+                    </p>
+                    <div class="page_container">
+                        <ul class="column large5 medium5 small12">
+                            <li>Cloud Computing</li>
+                            <li>Technical</li>
+                            <li>Photography</li>
+                        </ul>
+                        <ul class="column large5 medium5 small12">
+                            <li>Web Development</li>
+                            <li>Event Management</li>
+                            <li>Hackathons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+  
